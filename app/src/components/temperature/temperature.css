@@ -1,15 +1,19 @@
 .weathermatic-cold {
-	background-color: #97A8E0;
+	background-color: #4875B4;
+	border-color: color(#4875B4 shade(10%));
 }
 
 .weathermatic-cool {
-	background-color: #9ECCEB;
+	background-color: #FABB3D;
+	border-color: color(#FABB3D shade(10%));
 }
 
 .weathermatic-warm {
-	background-color: #DBAD8E;
+	background-color: #FAA041;
+	border-color: color(#FAA041 shade(10%));
 }
 
 .weathermatic-hot {
-	background-color: #C79181s;
+	background-color: #FF5454;
+	border-color: color(#FF5454 shade(10%));
 }

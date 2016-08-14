@@ -25,7 +25,7 @@ export default class Day extends Component {
             <span className="day__temp__max">{Math.round(day.temperatureMax)}°</span> | <span className="day__temp__min">{Math.round(day.temperatureMin)}°</span>
           </div>
           <div className="day__icon-container">
-            <WeatherIcon iconCss={'day__icon ' + day.fontIcon}></WeatherIcon>
+            <WeatherIcon css="day__icon" iconCss={day.fontIcon}></WeatherIcon>
           </div>
         </div>
         <div class="day__footer">

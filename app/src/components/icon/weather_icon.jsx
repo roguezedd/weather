@@ -11,11 +11,12 @@ export default class WeatherIcon extends Component {
   }
 
   render() {
-  	const css = this.props.iconCss || '';
+    const css = this.props.css || '';
+  	const iconCss = this.props.iconCss || '';
 
     return (
-      <div className="weathermatic__icon">
-        <i className={'wi ' + css}></i>
+      <div className={'weathermatic__icon ' + css} >
+        <i className={'wi ' + iconCss}></i>
       </div>
     );
   }

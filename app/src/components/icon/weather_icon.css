@@ -1,18 +1,10 @@
-$weather-icon-color: #424242;
-
 .weathermatic__icon {
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
-	border: 1px solid $weather-icon-color;
-	background-color: white;
 	
 	display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.weathermatic__icon i {
-	color: $weather-icon-color;
 }

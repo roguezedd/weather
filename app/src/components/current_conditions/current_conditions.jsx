@@ -22,25 +22,23 @@ export default class CurrentConditions extends Component {
 
     return (
       <div className={"current " + this.currentClass(current.temperature)}>
-
-        <div className="current__basic">
-          <div className="current__left">
-            <div className="current__icon-container">
-              <WeatherIcon iconCss={'current__icon ' + current.fontIcon}></WeatherIcon>
+        <div className="current__left">
+          <WeatherIcon css="current__icon" iconCss={current.fontIcon}></WeatherIcon>
+          <span className="current__summary">{current.summary}</span>
+        </div>
+        <div className="current__right">
+          <div>
+            <div className="current__icon--sm__container">
+              <WeatherIcon css="current__icon--sm" iconCss={current.fontIcon}></WeatherIcon>
             </div>
-            <span className="current__summary">{current.summary}</span>
-          </div>
-          <div className="current__right">
             <span className="current__temp">{Math.round(current.temperature)}°F</span>
           </div>
-        </div>
-        <div className="current__detail">
-          <ul>
+          <ul className="current__detail">
             <li><label>Dew Point</label> <span>{Math.round(current.dewPoint)}°F</span></li>
             <li><label>Humidity</label> <span>{current.humidity * 100}%</span></li>
-            <li><label>Wind Speed</label> <span>{Math.round(current.windSpeed)}mph</span></li>
+            <li><label>Wind Speed</label> <span>{Math.round(current.windSpeed)} mph</span></li>
             <li><label>Precip. Chance</label> <span>{Math.round(current.precipProbability * 100)}%</span></li>
-            <li><label>Pressure</label> <span>{current.pressure}in</span></li>
+            <li><label>Pressure</label> <span>{current.pressure} in</span></li>
           </ul>
         </div>
       </div>

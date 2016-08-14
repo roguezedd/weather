@@ -47,10 +47,13 @@ export default class WeatherChart extends Component {
 	            }
 	        }
 	    },
+	    legend: {
+        show: false
+    	},
 	    padding: {
 	    	top: 10,
 	    	right: 15,
-	    	bottom: 10,
+	    	bottom: 5,
 	    	left: 35
 	    },
 	    bindto: '.' + this.props.chartClass

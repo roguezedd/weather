@@ -47,6 +47,7 @@ h2 {
 	flex-direction: row;
 	flex: 1 1 auto;
 	padding: 0 10px 10px;
+	overflow: hidden;
 }
 
 .weathermatic__charting {
@@ -66,6 +67,7 @@ h2 {
 .weathermatic__day-list {
 	background-color: $header-footer-bg;
 	padding: 5px 10px 10px;
+	height: 190px;
 }
 
 @media (max-width: 600px) {
@@ -80,6 +82,10 @@ h2 {
 
 	.weathermatic__charting {
 		display: none;
+	}
+
+	.weathermatic__day-list {
+		height: auto;
 	}
 }
 

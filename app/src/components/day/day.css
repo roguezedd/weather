@@ -51,6 +51,8 @@
 
 .day__icon {
 	font-size: 20px;
+	border: 2px solid $font-color;
+	background-color: #F5F5F5;
 }
 
 @media (max-width: 600px) {
