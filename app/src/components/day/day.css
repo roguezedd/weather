@@ -1,0 +1,69 @@
+@import '../../variables.css';
+
+.day {
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 5px;
+}
+
+.day:first-child {
+	padding-left: 0;
+}
+
+.day:last-child {
+	padding-right: 0;
+}
+
+.day__header {
+	color: $font-color;
+}
+
+.day__day-of-week {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.day__date {
+	font-size: 14px;
+}
+
+.day__content {
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+}
+
+.day__temp__max {
+	color: #D5202A;
+}
+
+.day__temp__min {
+	color: #0455AF;
+}
+
+.day__icon-container {
+	width: 42px;
+	height: 42px;
+	margin: 6px;
+}
+
+.day__icon {
+	font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .day {
+		border-top: 1px solid $border-color;
+	}
+}
+
+@media (min-width: 600px) {
+	.day {
+		border-right: 1px solid $border-color;
+	}
+	.day:last-child {
+		border-right: none;
+	}
+}

@@ -1,0 +1,105 @@
+@import '../../variables.css';
+
+.current {
+	border: 1px solid $border-color;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.current__basic {
+	display: flex;
+	flex-direction: row;
+}
+
+.current__left {
+	width: 50%;
+	text-align: center;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.current__icon-container {
+	height: 0;
+  padding-bottom: 100%;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.current__icon-container .weathermatic__icon {
+	position: absolute;
+}
+
+.current__icon {
+	font-size: 120px;
+}
+
+.current__summary {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.current__detail {
+	padding: 20px 0 0;
+	margin: 20px 0;
+	margin-top: 20px;
+	border-top: 1px solid black;
+	box-sizing: border-box;
+	display: flex;
+}
+
+.current__detail > ul{
+	list-style-type: none;
+	margin: auto;
+	padding: 0;
+}
+
+.current__detail > ul li{
+	height: 21px;
+}
+
+.current__detail label {
+	width: 115px;
+	display: inline-block;
+}
+
+.current__detail span {
+	font-weight: 600;
+}
+
+.current__right {
+	width: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.current__temp {
+	font-size: 55px;
+}
+
+@media (max-width: 800px) {
+  .current__icon {
+		font-size: 90px;
+	}
+}
+
+@media (max-width: 600px) {
+  .current__icon {
+		font-size: 120px;
+	}
+}
+
+@media (max-width: 400px) {
+  .current__icon {
+		font-size: 50px;
+	}
+
+	.current__temp {
+		font-size: 40px;
+	}
+}

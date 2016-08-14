@@ -1,0 +1,95 @@
+@import "normalize.css";
+@import "../assets/font/weather-icons.min.css";
+@import "./variables.css";
+
+$header-footer-bg: #E5E5E5;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 225px;
+}
+
+h1 {
+	font-size: 26px;
+	margin: 5px 0;
+	color: $font-color;
+}
+
+h2 {
+	font-size: 20px;
+	margin: 5px 0;
+	color: $font-color;
+}
+
+#app-container{
+	height: 100%;
+}
+
+.weathermatic {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.weathermatic__header {
+	background-color: $header-footer-bg;
+	padding: 10px 5px;
+}
+
+.weathermatic__location{
+	padding-left: 10px;
+}
+
+.weathermatic__top {
+	display: flex;
+	flex-direction: row;
+	flex: 1 1 auto;
+	padding: 0 10px 10px;
+}
+
+.weathermatic__charting {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+	box-sizing: border-box;
+  justify-content: space-between;			
+}
+
+.weathermatic__chart {
+	width: 100%;
+	height: 48%;
+}
+
+.weathermatic__day-list {
+	background-color: $header-footer-bg;
+	padding: 5px 10px 10px;
+}
+
+@media (max-width: 600px) {
+
+	html, body {
+  	height: auto;
+	}
+
+  .weathermatic__current {
+  	width: 100%;
+	}
+
+	.weathermatic__charting {
+		display: none;
+	}
+}
+
+@media (min-width: 600px) {
+
+	html, body {
+  	height: 100%;
+	}
+
+	.weathermatic__current {
+		width: 50%;
+	}
+}

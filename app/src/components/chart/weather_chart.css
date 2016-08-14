@@ -1,0 +1,6 @@
+@import '../../variables.css';
+
+.weather-chart {
+	border: 1px solid $border-color;
+	border-radius: 5px;
+}
