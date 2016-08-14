@@ -4,4 +4,5 @@ npm-debug.log
 *.env
 .idea
 app/build
+server
 proj.txt
