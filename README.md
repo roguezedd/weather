@@ -56,6 +56,7 @@ cd weather/app
 npm run build
 
 ```
+Built files are added to the weather/app/build directory.
 
 ## Test the app
 
