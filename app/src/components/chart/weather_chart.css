@@ -8,6 +8,7 @@
 	box-sizing: border-box;
   margin: 0;
   padding: 0;
+  flex:1 1 auto;
 }
 
 .weather-chart-panel > header {

@@ -3,5 +3,4 @@ npm-debug.log
 .DS_Store
 *.env
 .idea
-app/build
 proj.txt
