@@ -1,3 +1,7 @@
+## Requirements
+
+Works with node version 5.3.0.
+
 ## Installation
 
 ```sh
