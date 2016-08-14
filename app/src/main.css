@@ -4,6 +4,15 @@
 
 $header-footer-bg: #E5E5E5;
 
+@font-face {
+  font-family: 'quigleywigglyregular';
+  src: url('../assets/font/quigleyw-webfont.woff') format('woff'),
+       url('../assets/font/quigleyw-webfont.ttf') format('truetype'),
+       url('../assets/font/quigleyw-webfont.svg#quigleywigglyregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -34,8 +43,11 @@ h2 {
 }
 
 .weathermatic__header {
-	background-color: $header-footer-bg;
-	padding: 10px 5px;
+  background-color: #616161;
+  padding: 5px 10px;
+  font-family: 'quigleywigglyregular';
+  font-size: 24px;
+  color: white;
 }
 
 .weathermatic__location{

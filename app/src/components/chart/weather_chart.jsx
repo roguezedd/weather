@@ -14,11 +14,11 @@ export default class WeatherChart extends Component {
   }
 
   componentDidMount() {
-		this.drawGraph();
+		setTimeout(() => { this.drawGraph(); }, 100);
   }
 
   componentDidUpdate() {
-		this.drawGraph();
+		setTimeout(() => { this.drawGraph(); }, 100);
   }
 
   drawGraph(){
@@ -63,9 +63,16 @@ export default class WeatherChart extends Component {
   render() {
 
   	const chartClass = this.props.chartClass;
+  	const title = this.props.title || '';
   	const style = {height: '100%'};
     return (
-    	<div className={"weather-chart " + chartClass} style={style}></div>
+    	<section className="weather-chart-panel">
+    		<header>{title}</header>
+    		<div className="weather-chart-panel__content">
+    			<div className={"weather-chart " + chartClass} style={style}></div>
+    		</div>
+    	</section>
+    	
     );
   }
 }

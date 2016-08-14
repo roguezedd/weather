@@ -70,10 +70,12 @@ export default class WeatherApp extends Component {
     })
     .then((data) => {
       this.weather = data;
+      StateShared.loadingErrorMessage = "";
       StateShared.weatherLoaded = true;
     })
     .fail((error) => {
       console.log(error);
+      StateShared.loadingErrorMessage = "There was an error connecting to the server. Please refresh and try again.";
     });
   }
 
@@ -99,12 +101,16 @@ export default class WeatherApp extends Component {
           </section>
           <section className="weathermatic__charting">
             <div className="weathermatic__chart">
-              <WeatherChart chartClass='temperature-chart' 
+              <WeatherChart 
+                  title="Temperature"
+                  chartClass='temperature-chart' 
                   xSeries={this.weather.hourTimestamps}
                   ySeries={this.weather.hourTemperatures} />
             </div>
             <div className="weathermatic__chart">
-              <WeatherChart chartClass='wind-chart' 
+              <WeatherChart
+                  title="Wind Speed" 
+                  chartClass='wind-chart' 
                   xSeries={this.weather.hourTimestamps}
                   ySeries={this.weather.hourWindSpeeds} />
             </div>

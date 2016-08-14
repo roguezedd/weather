@@ -1,6 +1,31 @@
 @import '../../variables.css';
 
-.weather-chart {
-	border: 1px solid $border-color;
-	border-radius: 5px;
+.weather-chart-panel {
+	border: 1px solid #D4D4D4;
+	height: 100%;
+	box-shadow: $panel-shadow;
+	position: relative;
+	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.weather-chart-panel > header {
+	 margin: 0 10px;
+	 border-bottom: 1px solid #D4D4D4;
+	 padding: 4px 4px;
+	 color: $font-color;
+	 font-weight: 600;
+	 font-size: 15px;
+	 height: 24px;
+	 box-sizing: border-box;
+}
+
+.weather-chart-panel__content {
+	overflow: hidden;
+	position: absolute;
+	top: 24px;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
