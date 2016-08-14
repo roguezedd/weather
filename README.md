@@ -7,11 +7,6 @@ Works with node version 5.3.0.
 ```sh
 git clone https://github.com/roguezedd/weather.git
 
-```
-
-First terminal
-```sh
-
 cd weather/app
 npm install
 
@@ -51,7 +46,6 @@ npm start
 
 ## Build the app
 
-First terminal
 ```sh
 
 cd weather/app
@@ -61,7 +55,6 @@ npm run build
 
 ## Test the app
 
-First terminal
 ```sh
 
 cd weather/app
