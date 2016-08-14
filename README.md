@@ -17,6 +17,8 @@ npm install
 vi .env
 
 [ add entries for the following tokens ]
+[ see: https://developer.forecast.io/ ]
+[ see: https://developers.google.com/maps/documentation/geolocation/intro ]
 FORECAST_AUTH=yourTokenHere
 GOOGLE_AUTH=yourTokenHere
 
@@ -43,6 +45,8 @@ npm start --mockApi true
 npm start
 
 ```
+
+In your browser, visit: http://localhost:8080/
 
 ## Build the app
 
