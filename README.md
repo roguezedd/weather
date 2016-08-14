@@ -14,10 +14,10 @@ npm install
 cd ../proxy
 npm install
 
-[optional]
+[ optional ]
 vi .env
 
-[add entries for the following tokens]
+[ add entries for the following tokens ]
 FORECAST_AUTH=yourTokenHere
 GOOGLE_AUTH=yourTokenHere
 
@@ -40,7 +40,27 @@ cd weather/proxy
 
 npm start --mockApi true
 
-or if you added an .env file
+[ or if you added an .env file ]
 npm start
+
+```
+
+## Build the app
+
+First terminal
+```sh
+
+cd weather/app
+npm run build
+
+```
+
+## Test the app
+
+First terminal
+```sh
+
+cd weather/app
+npm run test
 
 ```
