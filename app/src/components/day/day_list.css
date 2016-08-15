@@ -8,9 +8,17 @@
 	}
 }
 
-@media (min-width: 600px) {
+@media (min-width: 601px) {
 	.day-list {
 		flex-direction: row;	
 	}
 }
 
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) { 
+	.day-list {
+		flex-direction: column;
+	}
+}

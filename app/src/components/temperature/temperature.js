@@ -4,7 +4,7 @@ const temperatureBuildClass = (val) => {
 
 	if(val < 45){
     return rootClass + 'cold';
-  } else if(rootClass < 65){
+  } else if(val < 65){
     return rootClass + 'cool';
   } else if(val < 80){
     return rootClass + 'warm';
