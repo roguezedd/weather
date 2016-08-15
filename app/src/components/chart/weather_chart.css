@@ -14,7 +14,7 @@
 .weather-chart-panel > header {
 	 margin: 0 10px;
 	 border-bottom: 1px solid #D4D4D4;
-	 padding: 4px 2px;
+	 padding: 5px 2px 3px;
 	 color: $font-color;
 	 font-weight: 600;
 	 font-size: 15px;
