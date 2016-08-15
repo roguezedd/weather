@@ -35,7 +35,7 @@ export default class CurrentConditions extends Component {
           </div>
           <ul className="current__detail">
             <li><label>Dew Point</label> <span>{Math.round(current.dewPoint)}°F</span></li>
-            <li><label>Humidity</label> <span>{current.humidity * 100}%</span></li>
+            <li><label>Humidity</label> <span>{Math.round(current.humidity * 100)}%</span></li>
             <li><label>Wind Speed</label> <span>{Math.round(current.windSpeed)} mph</span></li>
             <li><label>Precip. Chance</label> <span>{Math.round(current.precipProbability * 100)}%</span></li>
             <li><label>Pressure</label> <span>{current.pressure} in</span></li>
